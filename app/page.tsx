@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Snippet } from "@heroui/snippet";
 import { Code } from "@heroui/code";
 import { Button } from "@heroui/button";
+import Link from "next/link";
 
 import { title, subtitle } from "@/components/primitives";
 import ConfettiButton from "@/components/confettiButton";
@@ -19,12 +20,17 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title()}>Discount&nbsp;</span>
-        <span className={title({ color: "violet" })}>Time Machine&nbsp;</span>
+        <span className={title()}>THE FINAL&nbsp;</span>
+        <span className="text-5xl text-violet-500 font-bold">
+          PROJECT!&nbsp;
+        </span>
         <br />
-        <span className={title()}>Wholesale</span>
+        <span className="text-5xl text-blue-300 font-bold">
+          About cruise ships&nbsp;
+        </span>
         <div className={subtitle({ class: "mt-4" })}>
-          A project template for YOU to make your own!
+          Please go to the page labled cruise ships for info, or click the
+          button below labled cruise link
         </div>
       </div>
 
@@ -36,6 +42,9 @@ export default function Home() {
             Spin
           </Button>
         </div>
+        <Button as={Link} color="secondary" href="/Cruises" radius="full">
+          Cruise Link
+        </Button>
       </div>
 
       <div className="mt-8">

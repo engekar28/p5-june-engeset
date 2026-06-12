@@ -25,6 +25,10 @@ export const siteConfig = {
       label: "About",
       href: "/about",
     },
+    {
+      label: "Cruise ships",
+      href: "/Cruises",
+    },
   ],
   navMenuItems: [
     {

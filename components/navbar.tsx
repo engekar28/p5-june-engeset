@@ -28,8 +28,8 @@ export const Navbar = () => {
       {/* LEFT */}
       <NavbarContent justify="start">
         <NavbarBrand>
-          <NextLink className="text-sm font-semibold" href="/">
-            logo
+          <NextLink className="text-xl font-semibold" href="/">
+            <p>🚢</p>
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
